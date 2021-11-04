@@ -1,0 +1,4 @@
+export const ADD_PRODUCT = "ADD_PRODUCT";
+export const DELETE_PRODUCT = "DELETE_PRODUCT";
+export const FILTER_PRODUCT = "FILTER_PRODUCT";
+export const CLEAR_FILTER = "CLEAR_FILTER";

@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: PT Sans;
+}
+
+/* -------------------Nav Styles------------------- */
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: -10px;
+  color: #929197;
+}
+
+.nave .navlinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.icons {
+  color: #929197;
+}
+
+.link {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #929197;
+}
+
+.link:hover {
+  color: black;
+}
+
+.nav-li {
+  margin: 10px 0px 0px 0px;
+  padding: 25px 20px;
+}
+
+.sidemenu-toggler {
+  position: absolute;
+  width: 40px;
+  padding: 6px;
+  top: 25px;
+  right: 20px;
+  display: none;
+}
+
+.sidemenu-toggler > span {
+  display: block;
+  background-color: black;
+  height: 2px;
+  top: 25px;
+  right: 50px;
+}
+
+.sidemenu-toggler > span:nth-child(2) {
+  margin: 4px 0 4px 0;
+  margin-left: auto;
+  width: 60%;
+  transition: 0.4s all;
+}
+
+.sidemenu-toggler > span:nth-child(3) {
+  margin-left: auto;
+  width: 15%;
+  transition: 0.8s all;
+}
+
+.sidemenu-toggler > span:nth-child(2),
+.sidemenu-toggler > span:nth-child(3) {
+  width: 80%;
+}
+
+.close-nav {
+  display: none;
+}
+
+/* -------------------Home Styles------------------- */
+
+.background {
+  background-image: url(context/product/sneaker_images/img58.jpg);
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+.new {
+  text-align: right;
+  padding: 10px 20px;
+  color: red;
+  font-weight: 600;
+}
+
+.img-center {
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-img1 {
+  border-radius: 20px;
+  background-image: url(context/product/sneaker_images/img14.jpg);
+  background-size: contain;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+
+.product-img2 {
+  border-radius: 20px;
+  background-image: url(context/product/sneaker_images/img32.jpg);
+  background-size: contain;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+
+.product-img3 {
+  border-radius: 20px;
+  background-image: url(context/product/sneaker_images/img4.jpg);
+  background-size: contain;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+.product-img4 {
+  border-radius: 20px;
+  background-image: url(context/product/sneaker_images/img2.jpg);
+  background-size: contain;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+
+/* --------------------------------Shop Styles--------------------------------- */
+.clr {
+  color: red;
+  filter: brightness(150%);
+  font-weight: 600;
+  padding: 0px 3px;
+}
+
+.shop-center {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-images {
+  margin: 10px 0px;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  width: 320px;
+  height: 290px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pd-name {
+  padding: 5px 0px;
+}
+
+.pd-price {
+  font-size: 30px;
+  padding: 5px 0px;
+  font-weight: 600;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 0px 10px;
+}
+
+.pd-tag {
+  font-size: 20px;
+}
+
+.product-btn {
+  color: black !important;
+  background-color: white !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: inset 0 0 black !important;
+}
+
+.product-btn :focus {
+  color: black !important;
+  background-color: white !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: inset 0 0 black !important;
+}
+/* -------------------------------Cart Styles------------------------------ */
+
+.number {
+  font-size: 20px;
+  font-weight: 600;
+}
+.cart-btn {
+  color: black !important;
+  background-color: white !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: inset 0 0 black !important;
+}
+.cart-btn:focus {
+  color: black !important;
+  background-color: white !important;
+
+  outline: none !important;
+  border: none !important;
+  box-shadow: inset 0 0 black !important;
+}
+.sub-total,
+.vat {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.total {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+/* -------------------------------Media Queries------------------------------ */
+
+@media (max-width: 768px) {
+  .img-center {
+    margin: 30px 0px;
+  }
+  .product-img1,
+  .product-img2,
+  .product-img3,
+  .product-img4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .logo {
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    margin: 27px 200px 0px 0px;
+  }
+
+  .sidemenu-toggler {
+    display: block;
+  }
+
+  .close-nav {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    top: 28px;
+    right: 60px;
+  }
+
+  .nave .navlinks {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    top: 0;
+    right: 0px;
+    transform: translate3d(100%, 0, 0);
+    background: rgba(42, 44, 46, 0.27);
+    box-shadow: 0px 8px 32px rgba(189, 59, 59, 0.37);
+    backdrop-filter: blur(34px);
+    height: 100vh;
+    width: 50%;
+    transform: translateX(-1500px);
+    transition: all 3ms ease-in-out;
+  }
+
+  .nave .navlinks li {
+    padding: 15px 0px !important;
+  }
+}
